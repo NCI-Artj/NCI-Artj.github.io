@@ -5,89 +5,138 @@ body
 	background:#b30000;
 	text-align:center;
 	color:White;
-	text-shadow:-1px -1px 0px black, 1px 1px 0px black, -1px 1px 0px black, 1px -1px 0px black;
+	
 	font-size: 18px;
-}
+
+} 
 
 /* Headings */
 #CV-Name
 {
+	margin-top: 5.5%;
+
 	color: White;
 	font-family: Helvetica;
 	font-size: 40px;
+
+	text-shadow:-1px -1px 0px black, 1px 1px 0px black, -1px 1px 0px black, 1px -1px 0px black;
 }
 h1
 {
 	color: White;
 	font-size: 35px;
+
+	text-shadow:-1px -1px 0px black, 1px 1px 0px black, -1px 1px 0px black, 1px -1px 0px black;
 }
 h2, h3
 {
 	color: White;
 	font-size: 30px;
+
+	text-shadow:-1px -1px 0px black, 1px 1px 0px black, -1px 1px 0px black, 1px -1px 0px black;
 }
 
-/* Table of Contents */
-#TableofContents
-{
-	background:#e90707;
-	border: 2px solid black; border-radius: 5px;
-	
-	position: fixed;
-	left: 1px;
-    top: 1px;
-	
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	
-	width: 12.5%;
-    min-width: 100px;
-    max-width: 200px;
-	
-	padding: 10px;
-	
+/* Nav Bar */
+.navbar-collapse {
+
+	justify-content: flex-end;
 }
-	#ToC-Subheading
-	{
-		color: White;
-		font-size: 20px;
-		margin: 0 auto; padding-bottom: 2%;
+
+.navbar, .navbar-expand-lg {
+
+	background-color: #e90707;
+	color: #e90707;
+	border-bottom: 2px solid black;
+
+	position: fixed;
+	width: 100%;
+	top: 0px;
+
+	z-index: 1000;
+
+}
+
+.navbar .nav-link {
+    color: white;
+	border: 1.5px solid black;
+	text-shadow:-1px -1px 0px black, 1px 1px 0px black, -1px 1px 0px black, 1px -1px 0px black;
+}
+
+	.navbar .nav-link.active {
+		color: white;
+		border: 1.5px solid black;
+		text-shadow:-1px -1px 0px black, 1px 1px 0px black, -1px 1px 0px black, 1px -1px 0px black;
 	}
-	#ToCList
-	{
-		margin: 0 auto;
-		padding-left: 9.5%;
-		text-align: left;
-	}
-		#ToCList a
-		{
-			text-decoration: none;
-			color: White;
+
+		.navbar .navbar-brand {
+			color: white;
+			text-shadow:-1px -1px 0px black, 1px 1px 0px black, -1px 1px 0px black, 1px -1px 0px black;
 		}
 
+.dropdown-menu {
+
+	background-color: #e90707;
+	border: 1px solid black;
+}
+	.dropdown-item {
+
+		color: white;
+		text-shadow:-0.5px -0.5px 0px black, 0.5px 0.5px 0px black, 0.5px 0.5px 0px black, 0.5px -0.5px 0px black;
+	}
+
+	.dropdown-divider {
+
+		color: White;
+		background-color: White;
+	}
+
+
 /* Education, Experience, and Skills */
-.EES-Subheading
-{
+.EES-Subheading {
 	color:White;
 	font-size:25px;
+
 	text-decoration-line:underline;
 		text-decoration-thickness:-1px;
 }
-	@media(min-width:750px)
-	{
-		#ExperienceJobs
-		{
-			display:flex;
-			justify-content: center; /* This is what puts it actually in the middle of the page */
-		}
-	}
-#ExperienceJob1, #ExperienceJob2, #ExperienceJob3
-{
-	border: 1px solid White;
-	padding-left: 2%; padding-right: 2%;
-	margin: 0; /* margin: 0 auto; makes it so that TOP and BOTTOM margins are 0, but LEFT and RIGHT margins are "auto" */
+
+#ExperienceJobs_Container {
+	
+	margin: auto;
+	padding: auto;
+
+	width: 100%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+
 }
+	#ExperienceJob1, #ExperienceJob2, #ExperienceJob3 {
+		border: 1px solid White;
+		margin: 0; /* margin: 0 auto; makes it so that TOP and BOTTOM margins are 0, but LEFT and RIGHT margins are "auto" */
+		margin-bottom: 2%;
+
+		padding: 2px;
+
+		background-color: #e90707;
+
+		color: White;
+		text-shadow:-0.5px -0.5px 0px black, 0.5px 0.5px 0px black, 0.5px 0.5px 0px black, 0.5px -0.5px 0px black;
+	}
+	#ExperienceJob1 h6, #ExperienceJob2 h6, #ExperienceJob3 h6 {
+		color: silver;
+		
+	}
+		#ExperienceJob1 a, #ExperienceJob2 a, #ExperienceJob3 a {
+		text-underline-offset: 4px;
+		text-decoration-thickness: 1.5px;
+		color: White;
+		text-shadow:-0.5px -0.5px 0px black, 0.5px 0.5px 0px black, 0.5px 0.5px 0px black, 0.5px -0.5px 0px black;
+
+	}
+
 
 #SkillsAndCert-Containers
 {
@@ -98,7 +147,8 @@ h2, h3
 	width: 45%;
 	flex-wrap: wrap;
 	
-	margin: 0 auto;
+	margin: auto;
+	margin-bottom: 2%;
 }
 @media(max-width: 750px)
 {
@@ -149,37 +199,22 @@ h2, h3
 		font-weight: bold;
 	}
 
-/* Return To Cover Letter */
-#ReturnToCoverLetter-Container
-{
-	background:#e90707;
-	border: 2px solid black; border-radius: 5px;
-	
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	
-	width: 12%;
-	min-width: 100px;
-    max-width: 160px;
+/* Footer */
+#Footer {
 
-	position: fixed;
-	left: 1px;
-    bottom: 1px;
-	
+	background-color: #e90707;
+	border-top: 2px solid black;
+	border-radius: 2%;
+	width: 100%;
+	margin: auto;
 }
-	#ReturnToCoverLetter-Container a, #ReturnToCoverLetter-Container h2
-	{	
-		text-decoration: none;
-		color: White;
-		font-size: 18px;
-		
-		margin: 0;
-			
-		padding-top: 1%;
-		padding-bottom: 1%;
-		padding-left: 1%;
-		padding-right: 1%;
-		
-			
-	}
+	#Footer p {
+
+	margin: auto;
+	color: White;
+	text-shadow:-1px -1px 0px black, 1px 1px 0px black, -1px 1px 0px black, 1px -1px 0px black;
+
+	padding-top: 2%;
+	padding-bottom: 2%;
+
+}
