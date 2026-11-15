@@ -1,0 +1,33 @@
+/* WK 8 - Lesson Challenge
+
+REMEMBER; ORDER IS PRIORITY, PLACE MEDIA QUERY AFTER MAIN GENERIC SELECTOR.
+*/
+
+body {
+	background: silver;
+ 
+
+}
+
+.class {
+	background: orange;
+
+}
+
+#ID {
+	background: red;
+
+}
+
+#InputAndButton {
+
+	display: flex;
+	flex-direction: column;
+
+	width: 50%;
+}
+
+#ResultMessage {
+
+	transition-duration: 1s;
+}
