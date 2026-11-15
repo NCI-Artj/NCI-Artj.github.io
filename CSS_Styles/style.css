@@ -1,0 +1,41 @@
+/* WK 8 - Weekly Labs Challenge
+
+REMEMBER; ORDER IS PRIORITY, PLACE MEDIA QUERY AFTER MAIN GENERIC SELECTOR.
+*/
+
+body {
+	background: silver;
+	margin: auto;
+
+}
+
+.class {
+	background: orange;
+
+}
+
+#RPSGameContainer {
+
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+h1 {
+	background: white;
+	text-align: center;
+	width: 100%;
+
+}
+
+#ScoresAndChoice {
+
+	display: flex;
+	justify-content: center;
+	gap: 2%
+}
+
+#GameResultMessage {
+
+	background-color: white;
+}
