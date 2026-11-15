@@ -1,11 +1,11 @@
-/* WK 8 - Lesson Challenge
+/* WK 8 - Weekly Labs Challenge
 
 REMEMBER; ORDER IS PRIORITY, PLACE MEDIA QUERY AFTER MAIN GENERIC SELECTOR.
 */
 
 body {
 	background: silver;
- 
+	margin: auto;
 
 }
 
@@ -14,20 +14,28 @@ body {
 
 }
 
-#ID {
-	background: red;
+#RPSGameContainer {
+
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+h1 {
+	background: white;
+	text-align: center;
+	width: 100%;
 
 }
 
-#InputAndButton {
+#ScoresAndChoice {
 
 	display: flex;
-	flex-direction: column;
-
-	width: 50%;
+	justify-content: center;
+	gap: 2%
 }
 
-#ResultMessage {
+#GameResultMessage {
 
-	transition-duration: 1s;
+	background-color: white;
 }
